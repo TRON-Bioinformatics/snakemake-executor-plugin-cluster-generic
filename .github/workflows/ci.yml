@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  formatting:
+  format:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the code
@@ -19,7 +19,7 @@ jobs:
       - name: Check formatting
         run: pixi run format --check
 
-  linting:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the code
